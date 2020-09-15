@@ -32,7 +32,7 @@ public class RegionFurnitures {
 		spawnTransforms = new List<LocalTransform>();
 	}
 
-	virtual internal void AddPosition(Vector3 localPosition, Quaternion localRotation, Vector3 localScale)
+	virtual public void AddPosition(Vector3 localPosition, Quaternion localRotation, Vector3 localScale)
 	{
 		LocalTransform transform = new LocalTransform();
 		transform.position = localPosition;

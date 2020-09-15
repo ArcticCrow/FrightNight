@@ -17,7 +17,7 @@ public class VariableRegionFurnitures : RegionFurnitures {
 		this.spawnAmount = new Range(0, 0);
 	}
 
-	internal override void AddPosition(Vector3 localPosition, Quaternion localRotation, Vector3 localScale)
+	public override void AddPosition(Vector3 localPosition, Quaternion localRotation, Vector3 localScale)
 	{
 		base.AddPosition(localPosition, localRotation, localScale);
 		this.spawnAmount.min++;
